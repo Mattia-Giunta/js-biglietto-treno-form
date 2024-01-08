@@ -16,8 +16,116 @@
 
 </head>
 
-<body>
+<body data-bs-theme="dark">
+
+
+        <h1 class="text-center mt-5">Calcola il prezzo del tuo biglietto</h1>
+
+        <form class="container border rounded w-75 text-center mt-4 p-5">
+        
+            <div class="row justify-content-center">
+
+                <div class="col-3">
+
+                    <label for="Name" class="form-label">Nome Cognome</label>
+                    <input id="Name" type="text" class="form-control" placeholder="Nome Cognome" aria-label="Nome Cognome">
+
+                </div>
+
+                <div class="col-3">
+
+                    <label for="km" class="form-label">Km da percorrere</label>
+                    <input id="km" type="text" class="form-control" placeholder="Km da percorrere" aria-label="Km da percorrere">
+
+                </div>
+
+                <div class="col-3">
+
+                    <label for="age" class="form-label">Fascia d'età</label>
+                    <select id="age" class="form-select" aria-label="Default select example">
+                        <option selected disabled>Fascia d'età</option>
+                        <option value="1">Minorenne</option>
+                        <option value="2">Maggiorenne</option>
+                        <option value="3">Over 65</option>
+                    </select>
     
+                </div>   
+
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-5 me-4">Genera</button>
+
+            <button type="submit" class="btn btn-primary mt-5">Annulla</button>
+
+        </form>
+
+        <h1 class="text-center mt-5">Il tuo biglietto</h1>
+
+        <div class="d-flex justify-content-center d-none">
+
+            <div class="card mb-3 w-75 justify-content-center" >
+
+                <div class="row g-0">
+
+                    <div class="col-md-4 border rounded bg-secondary ">
+
+                        <div class="card-body">
+                                
+                            <h5 class="card-title">Nome Passeggero</h5>
+
+                            <p class="card-text"></p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-8">
+
+                        <div class="card-body d-flex">
+
+                            <div class="card-body">
+                                
+                                <h5 class="card-title">Offerta</h5>
+
+                                <p class="card-text"></p>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">Carrozza</h5>
+
+                                <p class="card-text"></p>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">Codice Cp</h5>
+
+                                <p class="card-text"></p>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">Costo biglietto</h5>
+
+                                <p class="card-text"></p>
+
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
 
     <!-- link bootstrap -->
